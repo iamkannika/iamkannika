@@ -11,7 +11,13 @@ class HelloController extends Controller
     public function functionName() 
     {
         $coffees = Coffees::all();
-        return $coffees;
+        $array = [
+            'no' => 1234,
+            'name' => 'Mook cafe',
+            'coffees' => $coffees
+        ];
+       // return $array;
+        return view('welcome', $array);
     }
 
     public function functionName02() 
