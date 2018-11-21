@@ -4,6 +4,6 @@
     </head>
     <body>
         <h1>MENU</h1>
-        <a href="http://localhost/mook-laravel/public/order">order</a>
+        <a href="http://localhost/coffeeshop/public/order">order</a>
     </body>
 </html>
