@@ -12,8 +12,11 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('menu');
 });
-
-Route::get('welcome/cafe', 'HelloController@functionName');
-     
+Route::get('order', function () {
+    return view('order');
+}); 
+Route::get('confirm',function () {
+    return view('confirm');
+});
