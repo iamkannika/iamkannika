@@ -19,7 +19,7 @@
     </head>
     <body>
     <div class="container-fluid bg-1 text-center">
-        <h1>Mook Coffee</h1>
+        <h1>{{$name}}</h1>
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Cappuccino_at_Sightglass_Coffee.jpg/220px-Cappuccino_at_Sightglass_Coffee.jpg" alt="coffee" class="img-circle"  width="250" height="200">
     </div>
     <div class="text-center">
@@ -31,9 +31,11 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
        
         <div class="container text-center">
-          <a href="http://localhost/coffeeshop/public/order" class="btn btn-default btn-lg">Mocha</button></a>
-          <a href="http://localhost/coffeeshop/public/order" class="btn btn-default btn-lg">Latte</a>
-          <a href="http://localhost/coffeeshop/public/order" class="btn btn-default btn-lg">cappuccino</a>
+        @foreach($coffees as $coffee)
+          <a href="http://localhost/coffeeshop/public/order" class="btn btn-default btn-lg">
+            {{$coffee->name}}
+          </a>
+        @endforeach
         </div>
     </body>
 </html>

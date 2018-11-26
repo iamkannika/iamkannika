@@ -11,12 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('menu');
-});
-Route::get('order', function () {
-    return view('order');
-}); 
-Route::get('confirm',function () {
-    return view('confirm');
-});
+
+Route::get('welcome/cafe', 'HelloController@functionName');
+Route::resource('user','UsersController');     
+Route::get('menu', 'shopController@functionName');
+Route::get('order', 'shopController@functionName03');
+Route::get('confirm', 'shopController@functionName04');
+Route::get('/', 'shopController@functionName05');
