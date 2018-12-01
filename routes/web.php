@@ -18,3 +18,4 @@ Route::get('menu', 'shopController@functionName');
 Route::get('order', 'shopController@functionName03');
 Route::get('confirm', 'shopController@functionName04');
 Route::get('/', 'shopController@functionName05');
+Route::view('/bootstrap','bootstrap');

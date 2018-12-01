@@ -1,6 +1,8 @@
 <html>
     <head>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -17,7 +19,7 @@
 			<link rel="stylesheet" href="template/animate.min.css">
 			<link rel="stylesheet" href="template/owl.carousel.css">
 			<link rel="stylesheet" href="template/main.css">
-    
+            <title>Mook Coffee | Thailand</title>
     <style>
     /* Remove the navbar's default rounded borders and increase the bottom margin */ 
     .navbar {
@@ -52,15 +54,72 @@
     </head>
     <body>
     <!-- First Container -->
-    
+    <div class="container">
+            
+            <div >
+                    <div class="container text-center">
+                    <br>
+                    <h1>{{$name}}</h1>
+                    <img src="https://i.pinimg.com/564x/16/6e/d6/166ed60319d51a75561a22fbed74f4a0.jpg" alt="coffee" class="img-circle"  width="250" height="200">
+                    <p>A COFFEE A DAY KEEPS THE GRUMPY AWAY</p>
+                </div>
+                </div>
+            
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+              </ol>
+          
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+          
+                <div class="item active">
+                  <img src="https://i.pinimg.com/564x/53/53/b8/5353b88c1ddb61f89eb1aea5bfa3112c.jpg" alt="place1" style="width:100%;">
+                  <div class="carousel-caption">
+                    <h3>Los Angeles</h3>
+                    <p>LA is always so much fun!</p>
+                  </div>
+                </div>
+          
+                <div class="item">
+                  <img src="https://i.pinimg.com/564x/62/63/f7/6263f78e019b1c73b7739b05ea227df8.jpg" alt="Chicago" style="width:100%;">
+                  <div class="carousel-caption">
+                    <h3>Chicago</h3>
+                    <p>Thank you, Chicago!</p>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <img src="https://i.pinimg.com/564x/dc/b8/ab/dcb8abf19c5396aa5a244ca656a5cfda.jpg" alt="New York" style="width:100%;">
+                  <div class="carousel-caption">
+                    <h3>New York</h3>
+                    <p>We love the Big Apple!</p>
+                  </div>
+                </div>
+            
+              </div>
+          
+              <!-- Left and right controls -->
+              <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
     
     <!-- start banner Area -->
-		<section class="banner-area" id="home">	
+			
             <div >
                 <div class="container text-center">
-                <h1>{{$name}}</h1>
-                <img src="https://i.pinimg.com/564x/16/6e/d6/166ed60319d51a75561a22fbed74f4a0.jpg" alt="coffee" class="img-circle"  width="250" height="200">
-                <p>A COFFEE A DAY KEEPS THE GRUMPY AWAY</p>
+                <br>
+                <h3><p>A COFFEE A DAY KEEPS THE GRUMPY AWAY</p></h3>
             </div>
             </div>
 				<div class="container">
@@ -71,11 +130,11 @@
                            											
 					</div>
 				</div>
-			</section>
+			
 			<!-- End banner Area -->	
 
     <div class="text-center">
-        <h3>OUR MENU</h3>
+        <h2>OUR MENU</h2>
         				
     </div>    
         <!-- jQuery first, then Tether, then Bootstrap JS. -->
@@ -90,5 +149,17 @@
           </a>
         @endforeach
         </div>
+
+        <div
+            class="ProductListElement__cup-size"
+            style="width: 69px">&nbsp;</div>
+            <span class="ProductListElement__price">&nbsp;</span>
+            <div
+            class="ProductListElement__add-to-basket"
+            style="width: 255px">&nbsp;</div>
+        </div>
+        <div class="ProductListElement__intensity">
+        Intensity</div>
+    
     </body>
 </html>

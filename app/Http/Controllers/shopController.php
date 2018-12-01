@@ -13,7 +13,7 @@ class shopController extends Controller
         $coffees = Coffees::all();
         $array = [
             'no' => 1234,
-            'name' => 'Mook cafe 02',
+            'name' => 'Mook coffee & cafe',
             'coffees' => $coffees
         ];
     //    return $array;
