@@ -1,5 +1,5 @@
 <html>
-    <head>
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -20,6 +20,7 @@
 			<link rel="stylesheet" href="template/owl.carousel.css">
 			<link rel="stylesheet" href="template/main.css">
     <title>Mook Coffee | Thailand</title>
+    
     <style>
     /* Remove the navbar's default rounded borders and increase the bottom margin */ 
     .navbar {
@@ -38,20 +39,21 @@
       padding: 25px;
     }
     
-  .bg-1 { 
+    .bg-1 { 
       background-color: #bf8040; /* brown */
       color: #555555;
-  }
-  .bg-2 { 
+    }
+    .bg-2 { 
       background-color: #474e5d; /* Dark Blue */
       color: #ffffff;
-  }
-  .bg-3 { 
+    }
+    .bg-3 { 
       background-color: #ffffff; /* White */
       color: #555555;
-  }
-  </style>
-    </head>
+    }
+    </style>
+  </head>
+   
     <body>
     <!-- First Container -->
     <div class="container">
@@ -132,8 +134,12 @@
         <div class="container text-center">
         @foreach($coffees as $coffee)
         <h3><a href="{{route('order')}}" class="btn btn-default btn-lg">
-            {{$coffee->name}} - {{$coffee->type}}
-          </a></h3>
+            {{$coffee->id}}. {{$coffee->name}} - {{$coffee->type}}
+          </a>
+          <a href="{{route('admin-delete', ['id' => $coffee->id])}}"> X </button>
+
+          <a href="{{route('admin-edit',['id' => $coffee->id])}}" class="btn btn-primary"> edit </a>
+        </h3>
         @endforeach
         </div>
 
@@ -148,5 +154,6 @@
         <div class="ProductListElement__intensity">
         Intensity</div>
     
+        
     </body>
 </html>

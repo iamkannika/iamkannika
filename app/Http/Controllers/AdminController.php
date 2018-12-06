@@ -34,16 +34,26 @@ class AdminController extends Controller
     }
     public function delete(Request $request) 
     {
-        return 'delete';
-        Coffees::delete([
-            'name' => $request->name,
-            'price' => $request->price,
-            'type' => $request->type
-        ]);
+        // return 'delete';
+        $id = $request->id;
+        // return $id;
+        Coffees::where('id', $id)->delete();
 
         return back();
         // return $request->all();
     }
 
+    public function edit() 
+    {
+        $coffees = Coffees::all();
+        $array = [
+            'no' => 1234,
+            'name' => 'Mook coffee & cafe',
+            'coffees' => $coffees
+        ];
+        
+        //    return $array;
+        return view('admin', $array);
+    }
     
 }
