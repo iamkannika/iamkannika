@@ -14,8 +14,10 @@
 
 Route::get('welcome/cafe', 'HelloController@functionName');
 Route::resource('user','UsersController');     
-Route::get('menu', 'shopController@functionName');
-Route::get('order', 'shopController@functionName03');
-Route::get('confirm', 'shopController@functionName04');
-Route::get('/', 'shopController@functionName05');
+Route::get('menu', 'shopController@functionName')->name('menu');
+Route::get('order', 'shopController@functionName03')->name('order');
+Route::get('confirm', 'shopController@functionName04')->name('confirm');
+Route::get('/', 'shopController@functionName05')->name('public');
 Route::view('/bootstrap','bootstrap');
+Route::get('admin','AdminController@create');
+Route::post('admin','AdminController@save');

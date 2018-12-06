@@ -73,44 +73,32 @@
                 <li data-target="#myCarousel" data-slide-to="2"></li>
               </ol>
           
-              <!-- Wrapper for slides -->
-              <div class="carousel-inner">
-          
-                <div class="item active">
-                  <img src="https://i.pinimg.com/564x/53/53/b8/5353b88c1ddb61f89eb1aea5bfa3112c.jpg" alt="place1" style="width:100%;">
-                  <div class="carousel-caption">
-                    <h3>Los Angeles</h3>
-                    <p>LA is always so much fun!</p>
-                  </div>
+            <form action="http://localhost/coffeeshop/public/admin" method="post">
+              @csrf
+                <div class="form-group">
+                  <label>Name</label>
+                  <input name="name" type="text" class="form-control">
                 </div>
-          
-                <div class="item">
-                  <img src="https://i.pinimg.com/564x/62/63/f7/6263f78e019b1c73b7739b05ea227df8.jpg" alt="Chicago" style="width:100%;">
-                  <div class="carousel-caption">
-                    <h3>Chicago</h3>
-                    <p>Thank you, Chicago!</p>
-                  </div>
+                
+                <div class="form-group">
+                  <label>Price</label>
+                  <input name="price" type="text" class="form-control" placeholder="">
                 </div>
-              
-                <div class="item">
-                  <img src="https://i.pinimg.com/564x/dc/b8/ab/dcb8abf19c5396aa5a244ca656a5cfda.jpg" alt="New York" style="width:100%;">
-                  <div class="carousel-caption">
-                    <h3>New York</h3>
-                    <p>We love the Big Apple!</p>
-                  </div>
+
+                <div class="form-group">
+                  <label>Hot/Cold</label>
+                  <input name="type" type="text" class="form-control" placeholder="">
                 </div>
-            
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+               
+               
               </div>
           
               <!-- Left and right controls -->
-              <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right"></span>
-                <span class="sr-only">Next</span>
-              </a>
+              
+            
             </div>
           </div>
     
@@ -144,7 +132,7 @@
         <div class="container text-center">
         @foreach($coffees as $coffee)
         <h3><a href="{{route('order')}}" class="btn btn-default btn-lg">
-            {{$coffee->name}}
+            {{$coffee->name}} - {{$coffee->type}}
           </a></h3>
         @endforeach
         </div>

@@ -3,6 +3,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     
+    <title>Customize</title>
         <!-- Styles -->
         <style>
             html, body {
@@ -55,20 +56,24 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
-        
-  .bg-1 { 
-      background-color: #D2691E; /* Chocolate  */
-      color: #555555;
+
+            div {
+                width: 1800px;
+                height: 900px;
+                background-color: #FFB6C1;
+                animation-name: example;
+                animation-duration: 10s;
+            }
+
+
+            /* Standard syntax */
+            @keyframes example {
+            from {background-color: Snow;}
+            50%{background-color: #FFB6C1;}
+            to {background-color: #fb8b82;}
+}
   }
-  .bg-2 { 
-      background-color: #474e5d; /* Dark Blue */
-      color: #ffffff;
-  }
-  .bg-3 { 
-      background-color: #ffffff; /* White */
-      color: #555555;
-  }
-  </style>
+</style>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -76,10 +81,12 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     </head>
     <body>
-    <div class="bg-1 text-center">
-        <h1>Order</h1>
+    <div class="text-center">
+        <br>
+        <h1>Customize</h1>
         
-        <a href="http://localhost/coffeeshop/public/confirm"><button type="button" class="btn btn-warning">Confirm</button></a>
+        
+        <a href="{{route('confirm')}}" class="btn btn-warning">Confirm </a>
     </div>
    
     </body>
