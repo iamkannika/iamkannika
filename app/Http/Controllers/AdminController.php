@@ -51,9 +51,8 @@ class AdminController extends Controller
             'name' => 'Mook coffee & cafe',
             'coffees' => $coffees
         ];
-        
-        //    return $array;
-        return view('admin', $array);
+    //    return $array;
+        return view('edit', $array);
     }
     
 }

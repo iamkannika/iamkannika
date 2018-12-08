@@ -143,17 +143,7 @@
         @endforeach
         </div>
 
-        <div
-            class="ProductListElement__cup-size"
-            style="width: 69px">&nbsp;</div>
-            <span class="ProductListElement__price">&nbsp;</span>
-            <div
-            class="ProductListElement__add-to-basket"
-            style="width: 255px">&nbsp;</div>
-        </div>
-        <div class="ProductListElement__intensity">
-        Intensity</div>
-    
+          
         
     </body>
 </html>
