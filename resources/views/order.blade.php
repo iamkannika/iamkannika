@@ -11,12 +11,12 @@
                 color: #636b6f;
                 font-family: 'Nunito', sans-serif;
                 font-weight: 400;
-                height: 100vh;
+                height: 110vh;
                 margin: 0;
             }
 
             .full-height {
-                height: 100vh;
+                height: 110vh;
             }
 
             .flex-center {
@@ -32,7 +32,7 @@
             .top-right {
                 position: absolute;
                 right: 10px;
-                top: 18px;
+                top: 10px;
             }
 
             .content {
@@ -58,8 +58,8 @@
             }
 
             div {
-                width: 1800px;
-                height: 900px;
+                width: 100%;
+                height: 100%;
                 background-color: #FFB6C1;
                 animation-name: example;
                 animation-duration: 10s;
@@ -84,6 +84,17 @@
     <div class="text-center">
         <br>
         <h1>Customize</h1>
+        
+        <div class="text-center">
+            @foreach($coffees as $coffee)
+            <h3><a href="{{route('confirm')}}" class="btn btn-default btn-lg">
+                {{$coffee->name}}
+                {{$coffee->price}}
+                {{$coffee->type}}
+              
+              </a></h3>
+            @endforeach
+            </div>
         
         
         <a href="{{route('confirm')}}" class="btn btn-warning">Confirm </a>

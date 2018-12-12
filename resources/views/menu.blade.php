@@ -124,9 +124,7 @@
             </div>
 				<div class="container">
 					<div class="row fullscreen d-flex align-items-center justify-content-start">
-						<div class="banner-content col-lg-7">
-							<h6 class="text-white text-uppercase">Now you can feel the Energy</h6>
-						</div> 
+						 
                            											
 					</div>
 				</div>
@@ -145,20 +143,14 @@
         @foreach($coffees as $coffee)
         <h3><a href="{{route('order')}}" class="btn btn-default btn-lg">
             {{$coffee->name}}
+            {{$coffee->price}}
+            {{$coffee->type}}
+          
           </a></h3>
         @endforeach
         </div>
 
-        <div
-            class="ProductListElement__cup-size"
-            style="width: 69px">&nbsp;</div>
-            <span class="ProductListElement__price">&nbsp;</span>
-            <div
-            class="ProductListElement__add-to-basket"
-            style="width: 255px">&nbsp;</div>
-        </div>
-        <div class="ProductListElement__intensity">
-        Intensity</div>
+        
     
     </body>
 </html>

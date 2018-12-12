@@ -1,87 +1,56 @@
 <html>
-    <head>
-        
-            <title>Confirm Order</title>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1">
-            <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #FFB6C1;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 400;
-                height: 100vh;
-                margin: 0;
-            }
-
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 13px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-
-            div {
-                width: 1800px;
-                height: 900px;
-                background-color: #FFF8DC;
-                animation-name: example;
-                animation-duration: 10s;
-            }
-
-
-            /* Standard syntax */
-            @keyframes example {
-            from {background-color: Snow;}
-            50%{background-color: #755139;}
-            to {background-color: #FFF8DC;}
-}
-  }
-            
-    </style>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">  
+			<!--
+			CSS
+			============================================= -->
+			<link rel="stylesheet" href="template/linearicons.css">
+			<link rel="stylesheet" href="template/font-awesome.min.css">
+			<!-- <link rel="stylesheet" href="template/bootstrap.css"> -->
+			<link rel="stylesheet" href="template/magnific-popup.css">
+			<link rel="stylesheet" href="template/nice-select.css">			
+			<link rel="stylesheet" href="template/animate.min.css">
+			<link rel="stylesheet" href="template/owl.carousel.css">
+			<link rel="stylesheet" href="template/main.css">
+        <title>Confirm Order</title>
+        <style>
+            /* Remove the navbar's default rounded borders and increase the bottom margin */ 
+            .navbar {
+              margin-bottom: 50px;
+              border-radius: 0;
+            }
+            
+            /* Remove the jumbotron's default bottom margin */ 
+             .jumbotron {
+              margin-bottom: 0;
+            }
+           
+            /* Add a gray background color and some padding to the footer */
+            footer {
+              background-color: #f2f2f2;
+              padding: 25px;
+            }
+            
+          .bg-1 { 
+              background-color: #bf8040; /* brown */
+              color: #ffffff;
+          }
+          .bg-2 { 
+              background-color: #474e5d; /* Dark Blue */
+              color: #ffffff;
+          }
+          .bg-3 { 
+              background-color: #ffffff; /* White */
+              color: #555555;
+          }
+          </style>
     </head>
     <body>
     <!-- First Container -->
@@ -107,31 +76,29 @@
               <div class="carousel-inner">
           
                 <div class="item active">
-                  <img src="https://i.pinimg.com/564x/53/53/b8/5353b88c1ddb61f89eb1aea5bfa3112c.jpg" alt="place1" style="width:100%;">
+                  <img src="https://i.pinimg.com/564x/ed/c8/76/edc876ae8ff93c292a5e986208af129c.jpg" alt="place1" style="width:100%;">
                   <div class="carousel-caption">
-                    <h3>Los Angeles</h3>
-                    <p>LA is always so much fun!</p>
+                    <h2>Happy Every Day</h2>
+                    <p>Life is always so much fun!</p>
                   </div>
                 </div>
           
                 <div class="item">
-                  <img src="https://i.pinimg.com/564x/62/63/f7/6263f78e019b1c73b7739b05ea227df8.jpg" alt="Chicago" style="width:100%;">
+                  <img src="https://i.pinimg.com/564x/43/be/36/43be36d2bdcdbf93b47ce280ef32525a.jpg" alt="Chicago" style="width:100%;">
                   <div class="carousel-caption">
-                    <h3>Chicago</h3>
-                    <p>Thank you, Chicago!</p>
+                    <h2>Start your day with smile and coffee!</h2>
+                    <p>Thank you, Coffee!</p>
                   </div>
                 </div>
               
                 <div class="item">
-                  <img src="https://i.pinimg.com/564x/dc/b8/ab/dcb8abf19c5396aa5a244ca656a5cfda.jpg" alt="New York" style="width:100%;">
+                  <img src="https://i.pinimg.com/564x/a7/76/2d/a7762dfe293957cdd80d40574373560a.jpg" alt="New York" style="width:100%;">
                   <div class="carousel-caption">
-                    <h3>New York</h3>
-                    <p>We love the Big Apple!</p>
+                    <h2>A great cup of coffee</h2>
+                    <p>We love the Big Cup!</p>
                   </div>
                 </div>
-            
-              </div>
-          
+              </div>          
               <!-- Left and right controls -->
               <a class="left carousel-control" href="#myCarousel" data-slide="prev">
                 <span class="glyphicon glyphicon-chevron-left"></span>
@@ -143,6 +110,7 @@
               </a>
             </div>
           </div>
+
     <div class="text-center">
         <br>
         <h1>Confirm</h1>

@@ -134,7 +134,7 @@
         <div class="container text-center">
         @foreach($coffees as $coffee)
         <h3><a href="{{route('order')}}" class="btn btn-default btn-lg">
-            {{$coffee->id}}. {{$coffee->name}} - {{$coffee->type}}
+            {{$coffee->id}}. {{$coffee->name}} -{{$coffee->price}}- {{$coffee->type}}
           </a>
           <a href="{{route('admin-delete', ['id' => $coffee->id])}}"> X </button>
 

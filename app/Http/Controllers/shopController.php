@@ -8,7 +8,7 @@ use App\Coffees;
 class shopController extends Controller
 {
 
-    public function functionName() 
+    public function menuPage() 
     {
         $coffees = Coffees::all();
         $array = [
@@ -25,7 +25,7 @@ class shopController extends Controller
         return 'test in controller 02';
     }
 
-    public function functionName03() 
+    public function orderPage() 
     {
         $coffees = Coffees::all();
         $array = [
@@ -33,8 +33,9 @@ class shopController extends Controller
             'name' => 'Mook cafe',
             'coffees' => $coffees
         ];
-    //    return $array;
+    //   return $array;
         return view('order', $array);
+       // return $coffees;
     }
     public function functionName04() 
     {

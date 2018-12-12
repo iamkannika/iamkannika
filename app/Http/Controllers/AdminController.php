@@ -43,16 +43,34 @@ class AdminController extends Controller
         // return $request->all();
     }
 
-    public function edit() 
+    public function edit(Request $request) 
     {
-        $coffees = Coffees::all();
-        $array = [
-            'no' => 1234,
-            'name' => 'Mook coffee & cafe',
-            'coffees' => $coffees
-        ];
-    //    return $array;
-        return view('edit', $array);
+        $id = $request->input('id');
+
+        // $coffee = Coffees::find($id);
+        $coffee = Coffees::where('id', $id)->first();
+
+        // return $coffee;
+        return view('edit', [
+            'coffee' => $coffee
+        ]);
+    }
+
+    public function update(Request $request)
+    {
+        $id = $request->input('id');
+        $name = $request->input('name');
+        $price = $request->input('price');
+        $type = $request->input('type');
+
+        Coffees::where('id', $id)->update([
+            'name' => $name,
+            'price' => $price,
+            'type' => $type,
+        ]);
+
+        return redirect()->route('admin-create');
+        //Coffees::
     }
     
 }

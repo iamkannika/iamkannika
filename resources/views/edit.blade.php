@@ -29,25 +29,30 @@
       <h3 align ="center">แก้ไขข้อมูล</h3><br>
       
       
-      <form action="http://localhost/coffeeshop/public/admin" method="post">
+    <form action="{{route('admin-update')}}" method="post">
         @csrf
+        <div class="form-group">
+          <label>id</label>
+          <input name="id" type="text" class="form-control" placeholder="id" value="{{$coffee->id}}">
+        </div>
           <div class="form-group">
             <label>Name</label>
-            <input name="name" type="text" class="form-control">
+            <input name="name" type="text" class="form-control" placeholder="name" value="{{$coffee->name}}">
           </div>
           
           <div class="form-group">
             <label>Price</label>
-            <input name="price" type="text" class="form-control" placeholder="">
+            <input name="price" type="text" class="form-control" placeholder="" value="{{$coffee->price}}">
           </div>
 
           <div class="form-group">
             <label>Hot/Cold</label>
-            <input name="type" type="text" class="form-control" placeholder="">
+            <input name="type" type="text" class="form-control" placeholder="" value="{{$coffee->type}}">
           </div>
 
           <input type="submit" class="btn btn-primary" value="save"/>
         </form>
+      
         <a href="http://localhost/coffeeshop/public/admin" class="btn btn-default btn-lg" > Back to admin</a>
     </body>
 </html>
