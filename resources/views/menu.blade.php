@@ -115,7 +115,6 @@
           </div>
     
     <!-- start banner Area -->
-			
             <div >
                 <div class="container text-center">
                 <br>
@@ -124,8 +123,7 @@
             </div>
 				<div class="container">
 					<div class="row fullscreen d-flex align-items-center justify-content-start">
-						 
-                           											
+						                    											
 					</div>
 				</div>
 			
@@ -141,7 +139,7 @@
        
         <div class="container text-center">
         @foreach($coffees as $coffee)
-        <h3><a href="{{route('order')}}" class="btn btn-default btn-lg">
+        <h3><a href="{{route('order')}}?id={{$coffee->id}}" class="btn btn-default btn-lg">
             {{$coffee->name}}
             {{$coffee->price}}
             {{$coffee->type}}
@@ -149,8 +147,6 @@
           </a></h3>
         @endforeach
         </div>
-
-        
     
     </body>
 </html>

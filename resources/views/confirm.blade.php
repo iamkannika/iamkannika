@@ -59,7 +59,6 @@
             <div >
                     <div class="container text-center">
                     <br>
-                    <h1>{{$name}}</h1>
                     
                 </div>
                 </div>
@@ -76,7 +75,7 @@
               <div class="carousel-inner">
           
                 <div class="item active">
-                  <img src="https://i.pinimg.com/564x/ed/c8/76/edc876ae8ff93c292a5e986208af129c.jpg" alt="place1" style="width:100%;">
+                  <img src="https://i.pinimg.com/564x/ed/c8/76/edc876ae8ff93c292a5e986208af129c.jpg"  style="width:100%;">
                   <div class="carousel-caption">
                     <h2>Happy Every Day</h2>
                     <p>Life is always so much fun!</p>
@@ -84,7 +83,7 @@
                 </div>
           
                 <div class="item">
-                  <img src="https://i.pinimg.com/564x/43/be/36/43be36d2bdcdbf93b47ce280ef32525a.jpg" alt="Chicago" style="width:100%;">
+                  <img src="https://i.pinimg.com/564x/43/be/36/43be36d2bdcdbf93b47ce280ef32525a.jpg"  style="width:100%;">
                   <div class="carousel-caption">
                     <h2>Start your day with smile and coffee!</h2>
                     <p>Thank you, Coffee!</p>
@@ -92,7 +91,7 @@
                 </div>
               
                 <div class="item">
-                  <img src="https://i.pinimg.com/564x/a7/76/2d/a7762dfe293957cdd80d40574373560a.jpg" alt="New York" style="width:100%;">
+                  <img src="https://i.pinimg.com/564x/a7/76/2d/a7762dfe293957cdd80d40574373560a.jpg" style="width:100%;">
                   <div class="carousel-caption">
                     <h2>A great cup of coffee</h2>
                     <p>We love the Big Cup!</p>
@@ -114,6 +113,17 @@
     <div class="text-center">
         <br>
         <h1>Confirm</h1>
+        <div class="container text-center">
+          @foreach($confirm_coffee as $coffee)
+          <h3><a href="{{route('order')}}?id={{$coffee->id}}" class="btn btn-default btn-lg">
+            {{$coffee->name}}
+            {{$coffee->price}}
+            {{$coffee->Date}}
+            
+            </a></h3>
+          @endforeach
+          </div>
+          
         <a href="http://localhost/coffeeshop/public/menu" class="btn btn-default btn-lg" > Back to menu</a>
     </div>
     </body>

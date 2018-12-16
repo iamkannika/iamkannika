@@ -86,18 +86,21 @@
         <h1>Customize</h1>
         
         <div class="text-center">
-            @foreach($coffees as $coffee)
-            <h3><a href="{{route('confirm')}}" class="btn btn-default btn-lg">
+            
+            <h3 class="btn btn-default btn-lg">
                 {{$coffee->name}}
                 {{$coffee->price}}
                 {{$coffee->type}}
-              
-              </a></h3>
-            @endforeach
+              </h3>
+            
             </div>
         
-        
-        <a href="{{route('confirm')}}" class="btn btn-warning">Confirm </a>
+            <form action="http://localhost/coffeeshop/public/confirm" method="get">
+            <input name="name" value='{{$coffee->name}}'>
+            
+            <button type="submit" class="btn btn-warning">Confirm </button>
+            </form>
+            
     </div>
    
     </body>
