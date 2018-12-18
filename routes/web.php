@@ -21,6 +21,7 @@ Route::get('/', 'shopController@functionName05')->name('public');
 Route::view('/bootstrap','bootstrap');
 Route::get('admin','AdminController@create')->name('admin-create');
 Route::post('admin','AdminController@save');
+Route::post('admin','AdminCobtroller@store');
 Route::get('admin/delete','AdminController@delete')->name('admin-delete');
 Route::get('admin/edit','AdminController@edit')->name('admin-edit');
 Route::post('admin/update','AdminController@Update')->name('admin-update');

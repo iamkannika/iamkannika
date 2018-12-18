@@ -23,7 +23,7 @@
     <style>
     /* Remove the navbar's default rounded borders and increase the bottom margin */ 
     .navbar {
-      margin-bottom: 50px;
+      margin-bottom: 30px;
       border-radius: 0;
     }
     
@@ -35,7 +35,7 @@
     /* Add a gray background color and some padding to the footer */
     footer {
       background-color: #f2f2f2;
-      padding: 25px;
+      padding: 50px;
     }
     
   .bg-1 { 
@@ -77,7 +77,7 @@
               <div class="carousel-inner">
           
                 <div class="item active">
-                  <img src="https://i.pinimg.com/564x/53/53/b8/5353b88c1ddb61f89eb1aea5bfa3112c.jpg" alt="place1" style="width:100%;">
+                  <img src="https://i.pinimg.com/564x/53/53/b8/5353b88c1ddb61f89eb1aea5bfa3112c.jpg"style="width:100%;">
                   <div class="carousel-caption">
                     <h3>Los Angeles</h3>
                     <p>LA is always so much fun!</p>
@@ -85,7 +85,7 @@
                 </div>
           
                 <div class="item">
-                  <img src="https://i.pinimg.com/564x/62/63/f7/6263f78e019b1c73b7739b05ea227df8.jpg" alt="Chicago" style="width:100%;">
+                  <img src="https://i.pinimg.com/564x/62/63/f7/6263f78e019b1c73b7739b05ea227df8.jpg" style="width:100%;">
                   <div class="carousel-caption">
                     <h3>Chicago</h3>
                     <p>Thank you, Chicago!</p>
@@ -93,7 +93,7 @@
                 </div>
               
                 <div class="item">
-                  <img src="https://i.pinimg.com/564x/dc/b8/ab/dcb8abf19c5396aa5a244ca656a5cfda.jpg" alt="New York" style="width:100%;">
+                  <img src="https://i.pinimg.com/564x/dc/b8/ab/dcb8abf19c5396aa5a244ca656a5cfda.jpg" style="width:100%;">
                   <div class="carousel-caption">
                     <h3>New York</h3>
                     <p>We love the Big Apple!</p>
